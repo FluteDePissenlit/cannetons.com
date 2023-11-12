@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Amatic+SC&family=Bebas+Neue&family=Bungee+Shade&family=Codystar:wght@300&family=Coiny&family=Dancing+Script&family=Fascinate&family=Gloria+Hallelujah&family=Homemade+Apple&family=Joan&family=Kdam+Thmor+Pro&family=Kosugi+Maru&family=Lily+Script+One&family=Lobster&family=Londrina+Outline&family=Monoton&family=Mystery+Quest&family=Offside&family=Permanent+Marker&family=Potta+One&family=Press+Start+2P&family=Sonsie+One&family=Source+Code+Pro:wght@200&family=Varela+Round&family=ZCOOL+KuaiLe&display=swap');
+
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: rgb(0, 0, 0);
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.center {
+    justify-content: center;
+}
+
+
+.h1 {
+    font: normal 35px "Potta One", sans-serif;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+}
+@media (max-width: 650px) {
+    .h1 {
+        font-size: 25px;
+        padding-left: 30px;
+    }
+}
+
+.h2 {
+    font: normal 25px "Potta One", sans-serif;
+    padding-left: 100px;
+}
+@media (max-width: 650px) {
+    .h2 {
+        font-size: 15px;
+        padding-left: 80px;
+    }
+}
+
+.body {
+    font: normal 16px "Joan", sans-serif;
+    text-indent: 30px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+}
+@media (max-width: 650px) {
+    .body {
+        font-size: 12px;
+        text-indent: 20px;
+        padding-left: 80px;
+    }
+}
+
+.link {
+    font: normal 16px "Joan", sans-serif;
+    text-indent: 30px;
+    text-decoration: underline;
+}
+@media (max-width: 650px) {
+    .link {
+        font-size: 12px;
+        text-indent: 20px;
+    }
+}
+
+
+/* HEAD */
+.head {
+    background-color: rgb(255, 240, 120);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+@media (max-width: 900px) { 
+    .head {
+        flex-direction: column;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+@media (max-width: 650px) {
+    .logo {
+        font-size: 10px;
+    }
+}
+
+.nav {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+}
+@media (max-width: 650px) {
+    .nav {
+        width: 100%;
+    }
+}
+
+.logo-img {
+    width: 40px;
+}
+@media (max-width: 650px) {
+    .logo-img {
+        width: 20px;
+    }
+}
+.logo-title {
+    font: normal 40px "Coiny", sans-serif;
+    cursor: default;
+    padding-left: 10px;
+}
+@media (max-width: 650px) {
+    .logo-title {
+        font-size: 25px;
+    }
+}
+
+.nav-text {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: default;
+    font-size: inherit;
+}
+.nav-text:hover {
+    text-decoration: none;
+    color: rgb(177, 165, 0);
+}
+@media (max-width: 650px) {
+    .nav {
+        font-size: 14px;
+    }
+}
+
+
+/* HOME */
+.home {
+    background: url(assets/background_home.png);
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+@media (max-width: 650px) {
+    .home {
+        height: 80vh;
+    }
+}
+
+.home-title {
+    font: normal 50px "Coiny", sans-serif;
+    cursor: default;
+    padding-top: 250px;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+@media (max-width: 650px) {
+    .home-title {
+        font-size: 20px;
+    }
+}
+
+
+/* GALERY */
+.galery {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.galery .grid .picture {
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 3px;
+
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 650px) {
+    .galery .grid .picture {
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+        border-radius: 2px;
+    }
+}
+.link-duckduckgo {
+    font: normal 20px "Bebas Neue", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* WIKANARDIA */
+.wikanardia {
+    background-color: rgb(255, 242, 156);
+}
+
+.dico {
+    width: 40%;
+}
+@media (max-width: 650px) {
+    .dico {
+        width: 100%;
+    }
+}
